@@ -1,0 +1,25 @@
+ 
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Height over the years",
+    "subtitle": ["2000 - 2023", "Source: Internal"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/kajsadjure/kajsadjure.github.io/main/Exampledata1.csv"},
+ 
+  "mark": {
+    "type": "line",
+  "color": "hotpink"
+  },
+ 
+
+ 
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "Height", "type": "quantitative", "title":null}
+  }
+}
